@@ -181,6 +181,38 @@ namespace Topic_5___Asssignment
                 points -= 1;
             }
             Console.WriteLine("");
+            Console.WriteLine("Second Question! Who directed the 1994 crime film \"Pulp Fiction\"?");
+            Console.WriteLine("1: Martin Scorsese");
+            Console.WriteLine("2: Christopher Nolan");
+            Console.WriteLine("3: David Fincher");
+            Console.WriteLine("4: Quinten Tarantino");
+            Console.WriteLine("");
+            question2 = Console.ReadLine();
+            Console.WriteLine("");
+            if (question2 == "1")
+            {
+                Console.WriteLine("Nope! Right genre, wrong director! No points.");
+            }
+            else if (question2 == "2")
+            {
+                Console.WriteLine("Wrong! That guy does Sci-Fi! No points.");
+                points += 1;
+            }
+            else if (question2 == "3")
+            {
+                Console.WriteLine("Incorrect! That one directed \"Fight Club\" and \"Se7en\". No points.");
+            }
+            else if (question2 == "4")
+            {
+                Console.WriteLine("CORRECT!!! He directed, AND co-wrote the film!");
+            }
+            else
+            {
+                Console.WriteLine("INVALID ANSWER!!! You get points docked.");
+                points -= 1;
+            }
+            Console.WriteLine("");
+
 
         }
 
