@@ -6,6 +6,8 @@ namespace Topic_5___Asssignment
     {
         static void Main(string[] args)
         {
+            //this is the trvais assignment
+
             //Part1();
 
             //Part2();
@@ -143,8 +145,42 @@ namespace Topic_5___Asssignment
 
         public static void Part3()
         {
+            int points = 0;
+            string question1, question2, question3, question4;
 
-
+            Console.WriteLine("QUIZ TIME!!!! To answer properly, YOU gotta type out the answer's number, not the answer itself!");
+            Console.WriteLine("");
+            Console.WriteLine("First Question! When did the Western Roman Empire fall?");
+            Console.WriteLine("1: 330 AD");
+            Console.WriteLine("2: 476 AD");
+            Console.WriteLine("3: 1453 AD");
+            Console.WriteLine("4: 1066 AD");
+            Console.WriteLine("");
+            question1 = Console.ReadLine();
+            Console.WriteLine("");
+            if (question1 == "1")
+            {
+                Console.WriteLine("Nope! Later than that! No points.");
+            }
+            else if (question1 == "2")
+            {
+                Console.WriteLine("CORRECT!!! You get a point!");
+                points += 1;
+            }
+            else if (question1 == "3")
+            {
+                Console.WriteLine("Not even CLOSE! No points.");
+            }
+            else if (question1 == "4")
+            {
+                Console.WriteLine("Way earlier than that! No points.");
+            }
+            else
+            {
+                Console.WriteLine("No no NO! That's not an answer! You're getting points docked.");
+                points -= 1;
+            }
+            Console.WriteLine("");
 
         }
 
