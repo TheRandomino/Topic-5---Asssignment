@@ -6,11 +6,11 @@ namespace Topic_5___Asssignment
     {
         static void Main(string[] args)
         {
-            Part1();
+            //Part1();
 
             //Part2();
 
-            //Part3();
+            Part3();
         }
 
         public static void Part1()
@@ -87,9 +87,58 @@ namespace Topic_5___Asssignment
 
         public static void Part2()
         {
+            double firstNumber, secondNumber, resultNumber;
+            string symbol; 
+
+            Console.WriteLine("Provide a number.");
+            if (double.TryParse(Console.ReadLine(), out firstNumber))
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Provide another number.");
+                if (double.TryParse(Console.ReadLine(), out secondNumber))
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("Provide a symbol. (+, -, /, *)");
+                    symbol = Console.ReadLine();
+                    Console.WriteLine("");
+                    if (symbol == "+")
+                    {
+                        resultNumber = firstNumber + secondNumber;
+                        Console.WriteLine("Your resulting number is " + resultNumber + ".");
+                    }
+                    else if (symbol == "-")
+                    {
+                        resultNumber = firstNumber - secondNumber;
+                        Console.WriteLine("Your resulting number is " + resultNumber + ".");
+                    }
+                    else if (symbol == "*")
+                    {
+                        resultNumber = firstNumber * secondNumber;
+                        Console.WriteLine("Your resulting number is " + resultNumber + ".");
+                    }
+                    else if (symbol == "/")
+                    {
+                        resultNumber = firstNumber / secondNumber;
+                        Console.WriteLine("Your resulting number is " + resultNumber + ".");
+                    }
+                    else
+                    {
+                        Console.WriteLine("ERROR! Invalid input. Restart the program.");
+                    }
 
 
-
+                }
+                else
+                {
+                    Console.WriteLine("");
+                    Console.WriteLine("ERROR! Invalid input. Restart the program.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("ERROR! Invalid input. Restart the program.");
+            }
         }
 
         public static void Part3()
