@@ -212,7 +212,66 @@ namespace Topic_5___Asssignment
                 points -= 1;
             }
             Console.WriteLine("");
-
+            Console.WriteLine("Third Question! ?");
+            Console.WriteLine("1: ");
+            Console.WriteLine("2: ");
+            Console.WriteLine("3: ");
+            Console.WriteLine("4: ");
+            Console.WriteLine("");
+            question3 = Console.ReadLine();
+            Console.WriteLine("");
+            if (question3 == "1")
+            {
+                Console.WriteLine("");
+            }
+            else if (question3 == "2")
+            {
+                Console.WriteLine("");
+            }
+            else if (question3 == "3")
+            {
+                Console.WriteLine("");
+            }
+            else if (question3 == "4")
+            {
+                Console.WriteLine("");
+            }
+            else
+            {
+                Console.WriteLine("");
+                points -= 1;
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Fourth Question! ?");
+            Console.WriteLine("1: ");
+            Console.WriteLine("2: ");
+            Console.WriteLine("3: ");
+            Console.WriteLine("4: ");
+            Console.WriteLine("");
+            question4 = Console.ReadLine();
+            Console.WriteLine("");
+            if (question4 == "1")
+            {
+                Console.WriteLine("");
+            }
+            else if (question4 == "2")
+            {
+                Console.WriteLine("");
+            }
+            else if (question4 == "3")
+            {
+                Console.WriteLine("");
+            }
+            else if (question4 == "4")
+            {
+                Console.WriteLine("");
+            }
+            else
+            {
+                Console.WriteLine("");
+                points -= 1;
+            }
+            Console.WriteLine("");
 
         }
 
