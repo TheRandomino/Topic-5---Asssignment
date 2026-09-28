@@ -146,7 +146,9 @@ namespace Topic_5___Asssignment
         public static void Part3()
         {
             int points = 0;
-            string question1, question2, question3, question4;
+            string question1, question2, question3;
+            double question4;
+            bool conversionSuccess;
 
             Console.WriteLine("QUIZ TIME!!!! To answer properly, YOU gotta type out the answer's number, not the answer itself!");
             Console.WriteLine("");
@@ -181,97 +183,67 @@ namespace Topic_5___Asssignment
                 points -= 1;
             }
             Console.WriteLine("");
-            Console.WriteLine("Second Question! Who directed the 1994 crime film \"Pulp Fiction\"?");
-            Console.WriteLine("1: Martin Scorsese");
-            Console.WriteLine("2: Christopher Nolan");
-            Console.WriteLine("3: David Fincher");
-            Console.WriteLine("4: Quinten Tarantino");
+            Console.WriteLine("Second Question! What word is commonly usead as pirate slang for \"treasure\"?");
             Console.WriteLine("");
             question2 = Console.ReadLine();
             Console.WriteLine("");
-            if (question2 == "1")
+            if (question2.ToLower() == "booty")
             {
-                Console.WriteLine("Nope! Right genre, wrong director! No points.");
+                Console.WriteLine("CORRECT!!!");
+                points += 1;
             }
             else if (question2 == "2")
             {
-                Console.WriteLine("Wrong! That guy does Sci-Fi! No points.");
-                points += 1;
-            }
-            else if (question2 == "3")
-            {
-                Console.WriteLine("Incorrect! That one directed \"Fight Club\" and \"Se7en\". No points.");
-            }
-            else if (question2 == "4")
-            {
-                Console.WriteLine("CORRECT!!! He directed, AND co-wrote the film!");
+                Console.WriteLine("Nope! That's not it.");
             }
             else
             {
-                Console.WriteLine("INVALID ANSWER!!! You get points docked.");
+                Console.WriteLine("Wha- how- whatever. You get points docked.");
                 points -= 1;
             }
             Console.WriteLine("");
-            Console.WriteLine("Third Question! ?");
-            Console.WriteLine("1: ");
-            Console.WriteLine("2: ");
-            Console.WriteLine("3: ");
-            Console.WriteLine("4: ");
+            Console.WriteLine("Third Question! True or False: The 100 Years War actually lasted exactly 100 years.");
             Console.WriteLine("");
             question3 = Console.ReadLine();
             Console.WriteLine("");
-            if (question3 == "1")
+            if (question3.ToLower() == "t" || question3.ToLower() == "true")
             {
-                Console.WriteLine("");
+                Console.WriteLine("Incorrect! It's false! The war lasted 116 years, plus intermission periods!");
             }
-            else if (question3 == "2")
+            else if (question3.ToLower() == "f" || question3.ToLower() == "false")
             {
-                Console.WriteLine("");
+                Console.WriteLine("CORRECT! It's false! The war lasted 116 years, plus intermission periods!");
+                points += 1;
             }
-            else if (question3 == "3")
+            else
             {
-                Console.WriteLine("");
+                Console.WriteLine("HOW DO YOU MESS UP A TRUE OR FALSE QUESTION??? You're having points subtracted.");
+                points -= 1;
             }
-            else if (question3 == "4")
+            Console.WriteLine("");
+            Console.WriteLine("Fourth Question! It's math time! What is \"2145 / ([{1.5 * 2 + 10} * {3 * 11}] * 5)\" equal to?");
+            Console.WriteLine("");
+            conversionSuccess = double.TryParse(Console.ReadLine(), out question4);
+            if(question4  == 1)
             {
                 Console.WriteLine("");
+                Console.WriteLine("CORRECT!!! All of that is equal to 1!");
+                points += 1;
+            }
+            else if (!conversionSuccess)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("And you screw up a number answer. Great. You lose a point.");
+                points -= 1;
             }
             else
             {
                 Console.WriteLine("");
-                points -= 1;
+                Console.WriteLine("Wrong! The answer is simpler than you think!");
             }
             Console.WriteLine("");
-            Console.WriteLine("Fourth Question! ?");
-            Console.WriteLine("1: ");
-            Console.WriteLine("2: ");
-            Console.WriteLine("3: ");
-            Console.WriteLine("4: ");
-            Console.WriteLine("");
-            question4 = Console.ReadLine();
-            Console.WriteLine("");
-            if (question4 == "1")
-            {
-                Console.WriteLine("");
-            }
-            else if (question4 == "2")
-            {
-                Console.WriteLine("");
-            }
-            else if (question4 == "3")
-            {
-                Console.WriteLine("");
-            }
-            else if (question4 == "4")
-            {
-                Console.WriteLine("");
-            }
-            else
-            {
-                Console.WriteLine("");
-                points -= 1;
-            }
-            Console.WriteLine("");
+            Console.WriteLine("You finished the quiz and got " + points + " point(s)!");
+            //i would have added different comments based on how many points you got but tbh i just want this done
 
         }
 
