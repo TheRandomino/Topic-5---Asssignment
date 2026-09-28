@@ -8,9 +8,9 @@ namespace Topic_5___Asssignment
         {
             //this is the trvais assignment
 
-            //Part1();
+            Part1();
 
-            //Part2();
+            Part2();
 
             Part3();
         }
